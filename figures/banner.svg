@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1035;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#818CF8;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#C4B5FD;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#818CF8;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C4B5FD" />
+      <stop offset="50%" style="stop-color:#E9D5FF" />
+      <stop offset="100%" style="stop-color:#C4B5FD" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)" rx="12"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="60" r="2" fill="#C4B5FD" opacity="0.4"/>
+  <circle cx="190" cy="220" r="1.5" fill="#818CF8" opacity="0.3"/>
+  <circle cx="325" cy="45" r="1" fill="#E9D5FF" opacity="0.5"/>
+  <circle cx="500" cy="250" r="2" fill="#C4B5FD" opacity="0.3"/>
+  <circle cx="715" cy="55" r="1.5" fill="#818CF8" opacity="0.4"/>
+  <circle cx="860" cy="230" r="1" fill="#E9D5FF" opacity="0.3"/>
+  <circle cx="950" cy="88" r="2" fill="#C4B5FD" opacity="0.4"/>
+  <circle cx="1070" cy="192" r="1.5" fill="#818CF8" opacity="0.3"/>
+  <circle cx="1120" cy="48" r="1" fill="#E9D5FF" opacity="0.5"/>
+  <circle cx="145" cy="260" r="1" fill="#C4B5FD" opacity="0.3"/>
+  <circle cx="560" cy="275" r="1.5" fill="#818CF8" opacity="0.2"/>
+  <circle cx="640" cy="30" r="2" fill="#E9D5FF" opacity="0.3"/>
+
+  <!-- Left decorative: linked list -->
+  <g transform="translate(130, 150)" opacity="0.18" filter="url(#softGlow)">
+    <rect x="-65" y="-12" width="24" height="24" rx="3" fill="none" stroke="#818CF8" stroke-width="1"/>
+    <rect x="-30" y="-12" width="24" height="24" rx="3" fill="none" stroke="#C4B5FD" stroke-width="1"/>
+    <rect x="5" y="-12" width="24" height="24" rx="3" fill="none" stroke="#E9D5FF" stroke-width="1"/>
+    <rect x="40" y="-12" width="24" height="24" rx="3" fill="none" stroke="#C4B5FD" stroke-width="1"/>
+    <!-- Arrows -->
+    <line x1="-41" y1="0" x2="-30" y2="0" stroke="#C4B5FD" stroke-width="0.8" opacity="0.5"/>
+    <line x1="-6" y1="0" x2="5" y2="0" stroke="#C4B5FD" stroke-width="0.8" opacity="0.5"/>
+    <line x1="29" y1="0" x2="40" y2="0" stroke="#C4B5FD" stroke-width="0.8" opacity="0.5"/>
+    <!-- Node data dots -->
+    <circle cx="-53" cy="0" r="2" fill="#818CF8" opacity="0.5"/>
+    <circle cx="-18" cy="0" r="2" fill="#C4B5FD" opacity="0.5"/>
+    <circle cx="17" cy="0" r="2" fill="#E9D5FF" opacity="0.5"/>
+    <circle cx="52" cy="0" r="2" fill="#C4B5FD" opacity="0.5"/>
+  </g>
+
+  <!-- Right decorative: binary tree -->
+  <g transform="translate(1070, 150)" opacity="0.15" filter="url(#softGlow)">
+    <!-- Root -->
+    <circle cx="0" cy="-45" r="6" fill="#C4B5FD" opacity="0.5"/>
+    <!-- Level 1 -->
+    <circle cx="-30" cy="-10" r="5" fill="#818CF8" opacity="0.5"/>
+    <circle cx="30" cy="-10" r="5" fill="#818CF8" opacity="0.5"/>
+    <!-- Level 2 -->
+    <circle cx="-45" cy="25" r="4" fill="#E9D5FF" opacity="0.4"/>
+    <circle cx="-15" cy="25" r="4" fill="#E9D5FF" opacity="0.4"/>
+    <circle cx="15" cy="25" r="4" fill="#E9D5FF" opacity="0.4"/>
+    <circle cx="45" cy="25" r="4" fill="#E9D5FF" opacity="0.4"/>
+    <!-- Edges -->
+    <line x1="0" y1="-39" x2="-30" y2="-15" stroke="#C4B5FD" stroke-width="0.8" opacity="0.4"/>
+    <line x1="0" y1="-39" x2="30" y2="-15" stroke="#C4B5FD" stroke-width="0.8" opacity="0.4"/>
+    <line x1="-30" y1="-5" x2="-45" y2="21" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="-30" y1="-5" x2="-15" y2="21" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="30" y1="-5" x2="15" y2="21" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
+    <line x1="30" y1="-5" x2="45" y2="21" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- Center icon: stack/queue -->
+  <g transform="translate(600, 72)" filter="url(#softGlow)" opacity="0.7">
+    <rect x="-14" y="-22" width="28" height="8" rx="2" fill="none" stroke="#C4B5FD" stroke-width="1" opacity="0.5"/>
+    <rect x="-14" y="-12" width="28" height="8" rx="2" fill="none" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
+    <rect x="-14" y="-2" width="28" height="8" rx="2" fill="none" stroke="#818CF8" stroke-width="0.8" opacity="0.4"/>
+    <rect x="-14" y="8" width="28" height="8" rx="2" fill="none" stroke="#C4B5FD" stroke-width="1" opacity="0.5"/>
+    <!-- Arrow up -->
+    <line x1="22" y1="12" x2="22" y2="-22" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
+    <line x1="22" y1="-22" x2="19" y2="-18" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
+    <line x1="22" y1="-22" x2="25" y2="-18" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="0" y="282" width="1200" height="2" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="600" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="50" font-weight="300" fill="url(#textGrad)" letter-spacing="6" filter="url(#glow)">
+    BMSTU C++ Labs
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="198" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#A78BFA" letter-spacing="4" opacity="0.8">
+    DATA  STRUCTURES  &  ALGORITHMS  IN  C++
+  </text>
+
+  <!-- Tags -->
+  <text x="600" y="238" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#818CF8" letter-spacing="2" opacity="0.5" font-style="italic">
+    Stack  ·  Queue  ·  List  ·  Set  ·  BST  ·  Associative Containers
+  </text>
+</svg>
