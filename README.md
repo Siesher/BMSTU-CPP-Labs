@@ -1,6 +1,6 @@
 <div align="center">
 
-![BMSTU C++ Labs Banner](figures/banner.svg)
+<img src="figures/banner.svg" alt="BMSTU C++ Labs Banner" width="100%">
 
 # 📦 BMSTU C++ Labs
 
